@@ -4,6 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="main.css">
 <style>
+
+.slist{
+background-color:lightgrey;color:black;display:inline-block;border-radius:0.5em;padding:0.5em;margin:0.5em auto;
+}
 #myVideo {
   position: fixed;
   right: 0;
@@ -16,8 +20,8 @@
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
   width: 100%;
   padding:0;
 margin:0; left:0;padding-bottom:1em;
@@ -53,6 +57,8 @@ function myFunction() {
 document.getElementById("myBtn").style.display="none";
 document.getElementById("mtext").style.display="block";
 document.getElementById("myVideo").play();
+document.getElementById("h21").style.display="none";
+document.getElementById("h22").style.display="block";
 
 }
 function myFunctionoeg() {
@@ -78,13 +84,23 @@ btn.style.display="none";
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
   <h1>D.S.R Commerce Solutions</h1>
-<h2 style="color:wheat;font-weight:normal;">We talk less but deliver more</h2>
+<h2 id="h21" style="color:wheat;font-weight:normal;margin-bottom:0;font-style:italic;">&quot; Winners are fast & brave doers,<br>losers are inactives who end up envying other's growth<br>Who are you ? &quot;</h2>
+<h2 id="h22" style="color:wheat;font-weight:normal;margin-bottom:0;font-style:italic;display:none;">&quot; We talk less but deliver more &quot;</h2>
+<div id="md" style="padding:1em;padding-top:0.5em;"><a style="color:white;" href="srk.pdf" target="_blank">Managing Director</a></div>
 <button id="myBtn" onclick="myFunction()">Enter</button>
   <div id="mtext" style="display:none;">
-  <p>Find out how our buying and selling services can help you grow<div>Email : dsr_commerce@yahoo.com</div></p>
+  <div style="border:solid thin grey;background-color:none;color:black;width:fit-content;padding:0.5em 1em;margin:auto;border-radius:0.5em;">
+<div class="slist">Consumers</div>
+<div class="slist">B2B/div>
+<div class="slist">B2I</div>
+<div class="slist">B2C</div>
+</div>
+  <div style="border:solid thin grey;background-color:white;color:black;width:fit-content;padding:0.5em 1em;margin:0.5em auto;border-radius:0.5em;">Find out how our buying and selling services can help you grow</div>
+<div style="padding:1em;padding-top:0.5em;"><a style="color:white;" href="consultants.pdf" target="_blank">Work for us</a></div>
+<div style=""text-align:center;">Email : dsr_commerce@yahoo.com</div><divv style="text-align:center;font-size:smaller;color:wheat;">Chennai, India</div></div>
   </div>
 
   <!-- Use a button to pause/play the video with JavaScript -->
 </div> 
 </body>
-  </html>
+</html>
